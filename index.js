@@ -3,7 +3,7 @@ const wait = ms => source => (start, sink) => {
   let talkback;
   const ids = [];
   const unsubInterceptor = (t, d) => {
-    if (t === 2 && ids.length) while (ids.length) clearTimeout(ids.shift());
+    if (t === 2) while (ids.length) clearTimeout(ids.shift());
     talkback(t, d);
   };
 
