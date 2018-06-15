@@ -13,8 +13,8 @@ const wait = ms => source => (start, sink) => {
       sink(t, unsubInterceptor);
     } else {
       const id = setTimeout(() => {
-        sink(t, d);
         ids.splice(ids.indexOf(id), 1);
+        sink(t, d);
       }, ms);
       ids.push(id);
       if (t === 1) talkback(t);
