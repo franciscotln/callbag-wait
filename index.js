@@ -8,7 +8,7 @@ const wait = ms => source => (start, sink) => {
   };
 
   source(start, (t, d) => {
-    if (t === start) {
+    if (t === 0) {
       talkback = d;
       sink(t, unsubInterceptor);
     } else {
