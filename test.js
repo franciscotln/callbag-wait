@@ -2,7 +2,7 @@ const tape = require('tape');
 const fromIter = require('callbag-from-iter');
 const wait = require('.');
 
-tape('It delays a pullable source', t => {
+tape('It delays each item from a pullable source', t => {
   t.plan(10);
 
   const sourceEmits = [
@@ -34,7 +34,7 @@ tape('It delays a pullable source', t => {
     t.equal(sinkReceives.length, sourceEmits.length, 'no data left');
     t.pass('nothing else happens');
     t.end();
-  }, 100);
+  }, 400);
 });
 
 tape('It delays a listenable source', t => {

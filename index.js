@@ -17,7 +17,6 @@ const wait = ms => source => (start, sink) => {
         sink(t, d);
       }, ms);
       ids.push(id);
-      if (t === 1) talkback(t);
     }
   });
 };
