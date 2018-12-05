@@ -17,7 +17,7 @@ const wait = require('callbag-wait');
 pipe(
   fromIter([0, 1, 2, 3]),
   wait(2000),
-  forEach(v => console.log(v)) // => ----(0,1,2,3)|
+  forEach(v => console.log(v)) // => ----0----1----2----3|
 );
 ```
 
