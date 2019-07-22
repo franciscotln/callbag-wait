@@ -9,7 +9,9 @@
     "tape": "~4.9.1",
     "callbag-from-iter": "~1.2.0"
   },
-  "keywords": ["callbag"],
+  "keywords": [
+    "callbag"
+  ],
   "license": "MIT",
   "main": "index.cjs.js",
   "module": "index.js",
@@ -25,5 +27,5 @@
     "prepare": "npm test"
   },
   "typings": "index.d.ts",
-  "version": "2.0.0"
+  "version": "2.1.0"
 }
