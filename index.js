@@ -21,4 +21,4 @@ const wait = ms => source => (start, sink) => {
   });
 };
 
-module.exports = wait;
+export default wait;
